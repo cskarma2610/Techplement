@@ -36,9 +36,7 @@ public class QuizGenerator {
         } while (choice != 3);
     }
 
-    /**
-     * 
-     */
+  
     public static void createQuiz() {
         String quizName, question;
         ArrayList<Question> questions = new ArrayList<>();
@@ -79,9 +77,9 @@ public class QuizGenerator {
     }
 
     public static void takeQuiz() {
-        // Load quiz from file (replace with menu for selecting quiz)
-        String quizName = "Sample Quiz"; // Replace with loaded quiz name
-        ArrayList<Question> questions = getQuizQuestions(quizName); // Replace with actual loading logic
+       
+        String quizName = "Sample Quiz"; 
+        ArrayList<Question> questions = getQuizQuestions(quizName); 
 
         int score = 0;
         for (Question question : questions) {
@@ -104,13 +102,13 @@ public class QuizGenerator {
         System.out.println("You scored " + score + " out of " + questions.size());
     }
 
-    // Helper method to load quiz questions from file (implementation omitted for brevity)
+  
     public static ArrayList<Question> getQuizQuestions(String quizName) {
-        // Replace this with logic to read quiz data from a file based on quizName
-        return new ArrayList<>(); // Placeholder
+       
+        return new ArrayList<>();
     }
 
-    // Class representing a quiz question
+   
     public static class Question {
         private String question;
         private ArrayList<String> options;
