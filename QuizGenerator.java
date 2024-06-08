@@ -36,7 +36,7 @@ public class QuizGenerator {
         } while (choice != 3);
     }
 
-  
+   
     public static void createQuiz() {
         String quizName, question;
         ArrayList<Question> questions = new ArrayList<>();
@@ -77,7 +77,7 @@ public class QuizGenerator {
     }
 
     public static void takeQuiz() {
-       
+        
         String quizName = "Sample Quiz"; 
         ArrayList<Question> questions = getQuizQuestions(quizName); 
 
@@ -102,14 +102,11 @@ public class QuizGenerator {
         System.out.println("You scored " + score + " out of " + questions.size());
     }
 
-  
     public static ArrayList<Question> getQuizQuestions(String quizName) {
-       
-        return new ArrayList<>();
+        return new ArrayList<>(); 
     }
 
-   
-    public static class Question {
+     public static class Question {
         private String question;
         private ArrayList<String> options;
         private String correctAnswer;
